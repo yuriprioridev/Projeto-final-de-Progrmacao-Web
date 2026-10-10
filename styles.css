@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efe1d8;
+    color: #1a1a1a;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #efe1d8;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.logo-nome {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-nome h1 {
+    margin: 0;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.Ventron {
+    color: #e42f6e;
+}
+
+.Sensorial {
+    color: #cc688b;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links a,
+.rodape a {
+    color: #cc688b;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid black;  
+    padding: 4px 7px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover,
+.rodape a:hover {
+    color: #e24b80;
+}
+
+.nav-acoes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.botao-nav {
+    padding: 8px 12px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #e24b80;
+    color: white;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.botao-nav:hover {
+    background: #c73d6d;
+}
+
+.botao-login {
+    background: black;
+}
+
+.botao-login:hover {
+    background: #333;
+}
+
+.home {
+    margin-top: 75px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ad5d70;
+}
+
+.sobre {
+    width: 100%;
+    height: 100vh;
+}
+
+.sobre h1 {
+    color: #cc688b;
+    text-align: center;
+    font-size: 75px;
+}
+
+.sobre .text-pricipal {
+    font-size: 20px;
+    margin-top: 10px;
+    text-indent: 2em;
+    border: 1px solid black;
+    border-radius: 12px;
+    background: #d486a2;
+    color: #a0234f;
+    width: 75%;
+    margin: 0 5%;
+    padding: 5px;
+}
+
+.card-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.text-sobre {
+    background: #d486a2;
+    color: #a0234f;
+    margin-top: 25px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.titulo-do-catalogo {
+    color: #cc688b;
+    text-align: center;
+    font-size: 75px;
+}
+
+.catalogo .text-pricipal {
+    font-size: 20px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background: #d486a2;
+    color: #a0234f;
+    text-align: center;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.catalogo-vitrine {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 25px;
+    margin-left: 5%;
+    margin-right: 5%;   
+}
+
+.catalogo-card {
+    background: #e9ecef;
+    border: 2px solid black;
+    border-radius: 18px;
+    padding: 14px;
+}
+
+.catalogo-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+.titulo-do-perfume {
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #f02bcf;
+}
+
+.descricao-do-perfume {
+    margin: 0;
+    color: #ff39d4;
+}
+
+.ver-mais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+    padding: 12px 22px;
+    border: 2px solid black;
+    border-radius: 999px;
+    background: #e24b80;
+    color: white;
+    font-weight: 700;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.ver-mais:hover {
+    background: #c73d6d;
+}
+
+
+.contato {
+    gap: 24px;
+    align-items: start;
+    padding-top: 26px;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.contato h1 {
+    color: #cc688b;
+    width: 100%;
+    text-align: center;
+    font-size: 75px;
+}
+
+.info-e-form {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 25px;
+    margin-left: 5%;
+}
+
+.contato-info {
+    margin-top: 70px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    padding: 10px;
+}
+
+.Email {
+    font-size: 20px;
+    color: #cc688b;
+}
+
+.contato-1 {
+    font-size: 15px;
+    color: black;
+    text-indent: 2em;
+}
+
+.form-contato {
+    background: rgba(255, 255, 255, 0.55);
+    border: 2px solid black;
+    border-radius: 18px;
+    padding: 18px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 70px;
+}
+
+.conteudo-form {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.titulo-contato {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+
+
+.mensagem-contato {
+    min-height: 100px;
+    resize: vertical;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 8px;
+    margin-left: 7%;
+}
+
+.enviar-contato {
+    padding: 12px 24px;
+    border: 2px solid black;
+    border-radius: 999px;
+    background: black;
+    color: white;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 26px 18px 40px;
+    background: #efe1d8;
+    border-top: 2px solid black;
+}
+
+.rodape-text {
+    width: 100%;
+    margin: 0 0 8px;
+    text-align: center;
+    color: #4e4e4e;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        width: 100%;
+        position: static;
+        transform: none;
+    }
+
+    .nav-acoes {
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card-sobre {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .catalogo-grid,
+    .catalogo-vitrine,
+    .contato {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogo-vitrine {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .info-e-form {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .contato-info,
+    .form-contato {
+        width: 100%;
+    }
+
+    .form-contato {
+        margin-left: 0;
+    }
+
+    .rodape {
+        flex-direction: column;
+    }
+}
